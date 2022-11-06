@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Emirkan Kanmaz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-user-circle"><span>Me</span></a>
+						<a href="#about" class="icon solid fa-folder"><span>About</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Emirkan Kanmaz</h1>
+									<p>Computer Engineering Student</p>
+								</header>
+								<a href="#about" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="about" class="panel">
+								<header>
+									<h2>About Me</h2>
+								</header>
+								<p>
+									I am a 4th year computer engineering student who is eager to learn not only coding but every subject in life. I am currently focused on my graduation project.
+								</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+										<div class="col-4-large">
+											<a style="text-decoration: none;" href="mailto: emirkan.kanmaz.2001@gmail.com" class="fa fa-envelope"><span>emirkan.kanmaz.2001@gmail.com</span></a>
+										</div>
+										<div class="col-4-large">
+											<a href="https://github.com/Emirkanmaz" class="icon brands fa-github"><span>Github</span></a>
+										</div>
+										<div class="col-4-large">
+											<a href="https://www.linkedin.com/in/emirkanmaz/" class="icon brands fa-linkedin"><span>Linkedin</span></a>
+										</div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<div>Emirkan Kanmaz</div>
+							<div class="eye">
+							  <div class="ball"></div>
+							</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			  <script>
+			   var balls = document.getElementsByClassName("ball");
+			  document.onmousemove = function(){
+				var x = event.clientX * 100 / window.innerWidth + "%";
+				var y = event.clientY * 100 / window.innerHeight + "%";
+
+				for(var i=0;i<2;i++){
+				  balls[i].style.left = x;
+				  balls[i].style.top = y;
+				  balls[i].style.transform = "translate(-"+x+",-"+y+")";
+				}
+			  }
+			  </script>
+
+	</body>
+</html>
